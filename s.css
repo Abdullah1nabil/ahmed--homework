@@ -1,0 +1,198 @@
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+header {
+  width: 100%;
+  height: 10vh;
+}
+header .content {
+  display: flex;
+  position: relative;
+  padding-top: 30px;
+}
+header .content .right p {
+  float: right;
+  right: 0px;
+  position: absolute;
+  font-weight: 300;
+  cursor: pointer;
+}
+header .content h1 {
+  font-size: 18px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  cursor: default;
+}
+header .content ul {
+  display: flex;
+  margin-left: 20px;
+  cursor: pointer;
+}
+header .content ul li {
+  list-style-type: none;
+  margin-left: 15px;
+  font-weight: 300;
+  cursor: pointer;
+}
+header .content ul li a {
+  text-decoration: none;
+}
+header .content ul li a:hover {
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  margin-top: 30px;
+  position: relative;
+  margin-bottom: 300px;
+}
+main img {
+  width: 100%;
+}
+main .overlay {
+  height: 74vh;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: #00000047;
+}
+main h1 {
+  font-size: 32px;
+  font-weight: 300;
+  width: 75%;
+  text-align: center;
+  padding-left: 250px;
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+section {
+  width: 100%;
+  height: 800px;
+}
+section .cards {
+  width: 100%;
+  height: 567px;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+section .card {
+  width: 100%;
+  height: 600px;
+}
+section .card img {
+  width: 314px;
+  height: 289px;
+  object-fit: cover;
+  padding-bottom: 40px;
+}
+section .card h1 {
+  padding-bottom: 30px;
+  font-weight: 300;
+  font-size: 26px;
+}
+section .card p {
+  font-size: 13px;
+  color: #999999;
+  width: 320px;
+  line-height: 1.5em;
+  padding-bottom: 30px;
+}
+section .card input {
+  width: 147px;
+  height: 49px;
+  background: transparent;
+  color: black;
+  font-size: 14px;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  outline: none;
+  text-transform: uppercase;
+  margin-left: 5px;
+}
+section .card input:hover {
+  box-shadow: 0 0 5px black;
+}
+
+section .card:nth-of-type(2),
+section .card:nth-of-type(3) {
+  margin-left: 20px;
+}
+
+article {
+  width: 100%;
+  height: 700px;
+}
+article h1 {
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+article .images-style {
+  display: flex;
+}
+article .images-style .left {
+  float: left;
+  margin-right: 30px;
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+}
+
+article .images-style .right {
+  float: right;
+  display: flex;
+  flex-flow: wrap;
+}
+article .images-style .right img {
+  width: 250px;
+  height: 221px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 15vh;
+  border-top: 1px solid black;
+}
+footer .content-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+}
+footer .content-footer p {
+  font-size: 30px;
+  color: #999999;
+  font-weight: 300;
+}
